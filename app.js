@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const superagent = require("superagent");
 const Client = new Discord.Client();
 const OwnerID = "537147937583529994";
-const prefix = "!"
+const prefix = "+"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `MTools`, type: 0} });
+	Client.user.setPresence({ game: { name: `ParTnershiP`, type: 0} });
 });
 
 // welcome message
@@ -72,4 +72,4 @@ Client.on("message", async (message) => {
 
 });
 
-Client.login("NTc1MDczNzc2NTkzNjY2MDQ5.XNctTw.XIkGhErSt050WB8OFHRP3pDTnsk"); //replace with your token dont share yours.
+Client.login("NTYwODkyODI0NzYxOTI1NjMy.XNc_ig.d0kjSt3Od9EpbwFiTHUZpyVafKA"); //replace with your token dont share yours.
