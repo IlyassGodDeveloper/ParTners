@@ -34,7 +34,6 @@ Client.on("message", async (message) => {
 	} else
 
    if (command === "cat") {
-	   message.delete()
 	   const { body } = await superagent
 	   .get('aws.random.cat/meow');
 	   const embed = new Discord.RichEmbed()
@@ -46,6 +45,7 @@ Client.on("message", async (message) => {
 
    if (command === "announce") {
 	   if (message.member.hasPermission("ADMINISTRATOR")) {
+		   message.delete()
 		   const color = args[0]
 		   const text = args.slice(1).join(" ");
 		   if (text.length < 1) return message.channel.send("Can not announce nothing");
