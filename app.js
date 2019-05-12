@@ -53,7 +53,7 @@ Client.on("message", async (message) => {
 		   .setColor("0x" + color)
 		   .setTitle("Important Announcement:")
 		   .setDescription(text);
-		   message.channel.send("@everyone")
+		   message.channel.send("Announcement : ")
 		   message.channel.send(text)
 	   }
    } else
