@@ -34,6 +34,7 @@ Client.on("message", async (message) => {
 	} else
 
    if (command === "cat") {
+	   message.delete()
 	   const { body } = await superagent
 	   .get('aws.random.cat/meow');
 	   const embed = new Discord.RichEmbed()
