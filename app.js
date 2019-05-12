@@ -54,7 +54,7 @@ Client.on("message", async (message) => {
 		   .setTitle("Important Announcement:")
 		   .setDescription(text);
 		   message.channel.send("@everyone")
-		   message.channel.send({})
+		   message.channel.send({text})
 	   }
    } else
 
