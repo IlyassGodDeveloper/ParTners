@@ -43,7 +43,7 @@ Client.on("message", async (message) => {
 	   message.channel.send({embed})
    } else
 
-   if (command === "announcement") {
+   if (command === "announce") {
 	   if (message.member.hasPermission("ADMINISTRATOR")) {
 		   const color = args[0]
 		   const text = args.slice(1).join(" ");
@@ -53,8 +53,8 @@ Client.on("message", async (message) => {
 		   .setColor("0x" + color)
 		   .setTitle("Important Announcement:")
 		   .setDescription(text);
-		   message.channel.send("@everyone")
-		   message.channel.send({embed})
+		   message.channel.send("Anounce :")
+		   message.channel.send({})
 	   }
    } else
 
@@ -65,7 +65,7 @@ Client.on("message", async (message) => {
 		.addField("+help", "Will give the current command list")
 		.addField("+ping", "WIll show the ping time for the bot")
 		.addField("+say [text]", "Will make the bot say something")
-		.addField("+announcement [text]", "Will make the bot say an announcement and tag everyone")
+		.addField("+announce [text]", "Will make the bot say an announcement and tag everyone")
 		.addField("+cat", "Will send a random cat image");
 		message.channel.send({embed})
 	}
