@@ -6,7 +6,7 @@ const prefix = "+"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `ParTnershiP`, type: 0} });
+	Client.user.setPresence({ game: { name: `Rewards Nitro`, type: 0} });
 });
 
 // welcome message
@@ -73,4 +73,4 @@ Client.on("message", async (message) => {
 
 });
 
-Client.login("NTYwODkyODI0NzYxOTI1NjMy.XNc_ig.d0kjSt3Od9EpbwFiTHUZpyVafKA"); //replace with your token dont share yours.
+Client.login("NTc5NTIxNjk2MTkzODM5MTE1.XODX4A.awOwfj8LUj0GHuJBhbkIazuI-iU"); //replace with your token dont share yours.
