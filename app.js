@@ -6,7 +6,7 @@ const prefix = "+"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `Rewards Nitro`, type: 0} });
+	Client.user.setPresence({ game: { name: `BBX`, type: 0} });
 });
 
 // welcome message
